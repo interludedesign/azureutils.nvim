@@ -3,14 +3,14 @@ Utils for Azure from Neovim
 
 ## Install
 ```lua
-# init.lua
+-- init.lua
 -- Using Packer
 use("interludedesign/azureutils.nvim")
 ```
 
 ## Setup
 ```lua
-# init.lua
+-- init.lua
 require("azureutils").setup(
 	"https://tfs.acmeco.com/AcmeCoCollection/MyAwesomeProduct/_git",
 	{
@@ -22,7 +22,7 @@ require("azureutils").setup(
 
 ## Keymap
 ```lua
-# init.lua
+-- init.lua
 vim.api.nvim_set_keymap("n", "<leader>a", ":lua require('azureutils').open_file_in_azure()<CR>", {noremap = true})
 ```
 
