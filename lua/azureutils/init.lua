@@ -32,7 +32,7 @@ M.setup = function(git_repo_url, repos)
 	M._repos = repos
 end
 
-M.locate_line_in_repo = function()
+M.open_file_in_azure = function()
 	local bufname = a.nvim_buf_get_name(0)
 	local cursor = a.nvim_win_get_cursor(0)
 	local repo = select_repo_from_bufname(M._repos, bufname)
