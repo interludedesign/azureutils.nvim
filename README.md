@@ -11,6 +11,8 @@ Plug "interludedesign/azureutils.nvim"
 ```
 
 ## Setup
+Pass in the Azure git base url, and a list of possible git repo names to `setup()`:
+
 ```lua
 -- init.lua
 require("azureutils").setup(
