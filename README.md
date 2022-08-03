@@ -20,10 +20,26 @@ require("azureutils").setup(
 )
 ```
 
+To embed the above code snippet in a `.vim` file, wrap it like so:
+
+```lua
+lua << EOF
+	require('azureutils').setup{
+		-- ...
+	}
+EOF
+```
+
 ## Keymap
 ```lua
 -- init.lua
 vim.api.nvim_set_keymap("n", "<leader>a", ":lua require('azureutils').open_file_in_azure()<CR>", {noremap = true})
+```
+
+...or alternatively in a vim file:
+
+```lua
+	nnoremap <leader>a <cmd>lua require('azureutils').open_file_in_azure()<CR>
 ```
 
 ## Utils
