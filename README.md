@@ -24,9 +24,9 @@ To embed the above code snippet in a `.vim` file, wrap it like so:
 
 ```lua
 lua << EOF
-	require('azureutils').setup{
+	require('azureutils').setup(
 		-- ...
-	}
+	)
 EOF
 ```
 
