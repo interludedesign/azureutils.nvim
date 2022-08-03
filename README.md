@@ -39,7 +39,7 @@ vim.api.nvim_set_keymap("n", "<leader>a", ":lua require('azureutils').open_file_
 ...or alternatively in a vim file:
 
 ```lua
-	nnoremap <leader>a <cmd>lua require('azureutils').open_file_in_azure()<CR>
+nnoremap <leader>a <cmd>lua require('azureutils').open_file_in_azure()<CR>
 ```
 
 ## Utils
