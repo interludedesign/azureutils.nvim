@@ -4,7 +4,7 @@ Utils for Azure from Neovim
 ## Install
 ```lua
 -- Using Packer
-use("interludedesign/azureutils.nvim")
+use "interludedesign/azureutils.nvim"
 
 -- Using Plug
 Plug "interludedesign/azureutils.nvim"
