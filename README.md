@@ -49,5 +49,15 @@ nnoremap <leader>a <cmd>lua require('azureutils').open_file_in_azure()<CR>
 ## Utils
 - `open_file_in_azure()`: Locate the file and line in Azure using nvim current buffer
 
+## Testing
+This plugin uses [plenary.nvim](https://github.com/nvim-lua/plenary.nvim) so you'll need that installed via your vim plugin manager. Specs are in `lua/spec`. It's easiest to run specs from the relevant file with a keymap:
+
+```lua
+-- Run Plenary tests
+vim.api.nvim_set_keymap("n", "<leader><leader>t", "<Plug>PlenaryTestFile", {noremap = true})
+```
+
+See this [testing guide](https://github.com/nvim-lua/plenary.nvim/blob/master/TESTS_README.md) for more details.
+
 ## Credits
 Originally written in Ruby by [shirts](https://github.com/shirts)
